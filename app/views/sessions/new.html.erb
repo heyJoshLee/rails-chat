@@ -1,1 +1,20 @@
-<h1>Log in</h1>
+<h4 class="ui center aligned medium icon header">
+  <i class="circular coffee icon orange"></i>
+  Log in
+</h4>
+
+
+<%= form_with(scope: :session, url: login_path, class: "ui form") do |f| %>
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username, class: "ui input"%>
+  <div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password, class: "ui input"%>
+  <div>
+
+  <%= f.submit "Log in", class: "ui button primary" %>
+
+<% end %>
+
