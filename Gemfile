@@ -22,7 +22,12 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'semantic-ui-sass'
+
+# had to run yarn add jquery popper.js semantic-ui-sass
+# to get jquery to work.
+# Also see enviorment.js and application.js files for installing
 gem 'jquery-rails'
+gem 'popper'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
